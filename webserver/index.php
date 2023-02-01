@@ -2,9 +2,9 @@
 <?php 
 // conection Info
 $servername = "rm-l4v670ce623mi4fxv.mysql.me-central-1.rds.aliyuncs.com";
-$username = "amb";
-$password = "No123456";
-$DBName = "demodb";
+$username = "username";
+$password = "password";
+$DBName = "dbname";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $DBName);
 
