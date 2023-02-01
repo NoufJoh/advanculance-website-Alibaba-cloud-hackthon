@@ -2,21 +2,20 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/ADVANCULANCE.svg" alt="Logo" width="500" height="500">
-    
+  <a href="https://github.com/NoufJoh/advanculance-website-Alibaba-cloud-hackthon/">
+    <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/ADVANCULANCE.svg" alt="Logo" width="250" height="250">
+    <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/imgs/logo-black.svg" alt="Logo" width="500" height="500">
+
   </a>
 
 <h3 align="center">Advanculance System on Alibaba Cloud Saudi Arabia</h3>
   <h3 align="center">Hackthon</h3>
 
   <p align="center">
-    This project is a participation in Alibaba Cloud Hackthon in Saudi Arabia.
+    This project is a participation in Alibaba Cloud Saudi Hackathon [Advanculance Website](https://alibabacloud.sa/leap/hackathon).
   </p>
 </div>
 
@@ -26,7 +25,7 @@
 ## Team Members
 * NOUF ALJOHANI `@NoufJoh`
 * Haneen Mimish `@HaneenOM`
-* Weaam Albaity `@Amal001001`
+* Weaam Albaity `@wemobaity`
 * Noran Tarek `@norantrk`
 
 
@@ -43,8 +42,6 @@ In this project, we used the available resources in Alibaba Cloud Saudi to build
 <br/>
 
  `Alibaba Cloud`, `Saudi Arabia`,`Ambulance Mointering System`, `Advanced System`, `Website`, `Health`, `Health-Sector`
-
-
 
 
 
