@@ -1,4 +1,3 @@
-
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 
@@ -15,7 +14,7 @@
   <h3 align="center">Hackthon</h3>
 
   <p align="center">
-    This project is a participation in Alibaba Cloud Saudi Hackathon [Advanculance Website](https://alibabacloud.sa/leap/hackathon).
+    This project is a participation in Alibaba Cloud Saudi Hackathon [Hackthon Link](https://alibabacloud.sa/leap/hackathon)
   </p>
 </div>
 
@@ -59,6 +58,7 @@ In this project, we used the available resources in Alibaba Cloud Saudi to build
 * MySQL;
 * Apache;
 * CSS;
+* DNS, SSL; 
 
 
 
@@ -77,7 +77,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * NOUF ALJOHANI - [Linkedin](https://www.linkedin.com/in/noufaljohani/)
 * Haneen Mimish - [Linkedin](https://www.linkedin.com/in/homimish/)
 * Weaam Albaity - [Linkedin](https://www.linkedin.com/in/weaam-albaity-055996225)
-* Noran Tarek - 
+* Noran Tarek - [Linkedin](https://www.linkedin.com/in/noran-tarek-258285182/)
 
 ## Links
 * Project Link: [Advanculance-website-Alibaba-Cloud-Hackthon](https://github.com/NoufJoh/advanculance-website-Alibaba-cloud-hackthon)
