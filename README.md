@@ -5,16 +5,15 @@
 <br />
 <div align="center">
   <a href="https://github.com/NoufJoh/advanculance-website-Alibaba-cloud-hackthon/">
-    <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/ADVANCULANCE.svg" alt="Logo" width="250" height="250">
-    <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/imgs/logo-black.svg" alt="Logo" width="500" height="500">
-
+    <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/ADVANCULANCE.svg" alt="Logo" width="500" height="500">
+    <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/imgs/logo-black.svg" alt="Logo" width="380" height="400">
   </a>
 
-<h3 align="center">Advanculance System on Alibaba Cloud Saudi Arabia</h3>
+<h2 align="center">Advanculance System on Alibaba Cloud Saudi Arabia</h3>
   <h3 align="center">Hackthon</h3>
 
   <p align="center">
-    This project is a participation in Alibaba Cloud Saudi Hackathon [Hackthon Link](https://alibabacloud.sa/leap/hackathon)
+    This project is a participation in Alibaba Cloud Saudi Hackathon.
   </p>
 </div>
 
@@ -82,6 +81,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Links
 * Project Link: [Advanculance-website-Alibaba-Cloud-Hackthon](https://github.com/NoufJoh/advanculance-website-Alibaba-cloud-hackthon)
 * Website Link: [Advanculance Website](https://www.advanculance.site/)
+* Hackthon Link: [Hackthon Link](https://alibabacloud.sa/leap/hackathon/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
