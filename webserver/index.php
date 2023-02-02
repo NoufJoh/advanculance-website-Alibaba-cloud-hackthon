@@ -4,7 +4,7 @@
 $servername = "rm-l4v670ce623mi4fxv.mysql.me-central-1.rds.aliyuncs.com";
 $username = "username";
 $password = "password";
-$DBName = "dbname";
+$DBName = "DBName";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $DBName);
 
@@ -12,14 +12,16 @@ $conn = new mysqli($servername, $username, $password, $DBName);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-//echo "Connected successfully";
+
 $query = "select * from patients";
 $result = mysqli_query($conn,$query);
+$query1 = "select * from ambulances WHERE id_ambulance = '003'";
+$result1 = mysqli_query($conn,$query1);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>ADVANCULANCE System</title>
+<title>ADVANCULANCE</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -47,7 +49,19 @@ div.end{
   background-color:lightgray;
   margin: 0 auto;
 }
+#divStage{
+background-color: darkseagreen;
+}
 
+#divHealth{
+background-color: green;
+}
+#divTraffic{
+background-color: green;
+}
+#divEqu{
+background-color:green;
+}
 
 </style>
 </head>
@@ -56,7 +70,7 @@ div.end{
 <!-- Top container -->
 <div class="container">
   <div>
-  <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/logo2.png" height="100px" width="250px" style="margin-left:120px;">
+  <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/ADVANCULANCE.svg" height="200px" width="600px" style="margin-left:300px;">
 
   </div>
 </div>
@@ -77,40 +91,38 @@ div.end{
 
   <div class="w3-row-padding w3-margin-bottom">
     <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
+      <div id="divStage" class="w3-container w3-padding-16">
         <div class="w3-left"><i class="material-icons w3-xxxlarge">zoom_out_map</i></div>
         <div class="w3-right">
-          <h3>52</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Stage</h4>
       </div>
     </div>
     <div class="w3-quarter">
-      <div class="w3-container w3-blue w3-padding-16">
+      <div id="divHealth" class="w3-container w3-padding-16">
         <div class="w3-left"><i class="material-icons w3-xxxlarge">person_outline</i></div>
         <div class="w3-right">
-          <h3>99</h3>
+          
         </div>
         <div class="w3-clear"></div>
         <h4>Health Status</h4>
       </div>
     </div>
     <div class="w3-quarter">
-      <div class="w3-container w3-teal w3-padding-16">
+      <div id="divTraffic" class="w3-container w3-padding-16">
         <div class="w3-left"><i class="material-icons w3-xxxlarge">my_location</i></div>
         <div class="w3-right">
-          <h3>23</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Traffic</h4>
       </div>
     </div>
     <div class="w3-quarter">
-      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+      <div id="divEqu" class="w3-container w3-padding-16">
         <div class="w3-left"><i class="material-icons w3-xxxlarge">battery_full</i></div>
         <div class="w3-right">
-          <h3>50</h3>
+          
         </div>
         <div class="w3-clear"></div>
         <h4>Equipment Condition</h4>
@@ -137,6 +149,12 @@ div.end{
   <hr>
   <?php 
   $row = mysqli_fetch_assoc($result) ?>
+   <?php 
+  $row1 = mysqli_fetch_assoc($result1) ?>
+  <?php $latdata = $row1['Ambulance_latitude']; ?>
+  <?php $lngdata = $row1['Ambulance_longitude']; ?>
+  
+
   <div class="w3-container">
     <h5>Vital Signs </h5>
     <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
@@ -145,34 +163,58 @@ div.end{
         </td>
 
         <td>Oxgyn Saturation</td>
-        <td><?php echo $row['Respiration']; ?></td>
+        <td><?php echo $row['Respiration']; ?> breathe/min
+        </td>
       </tr>
       <tr>
         <td><img src="https://db-measuers.oss-me-central-1.aliyuncs.com/imgs/thermometer.svg" height="100" width="100"></td>
         <td>Tempretature</td>
-        <td><?php echo $row['Temperature']; ?></td>
+        <td><?php echo $row['Temperature']; ?> C
+        </td>
       </tr>
       <tr>
         <td><img src="https://db-measuers.oss-me-central-1.aliyuncs.com/imgs/oxygen-breath.svg" height="100" width="100"></td>
 
         <td>Respiratory Rate</td>
-        <td><?php echo $row['Oxygen_saturation']; ?></td>
+        <td><?php echo $row['Oxygen_saturation']; ?> % </td> 
       </tr>
       <tr>
         <td><img src="https://db-measuers.oss-me-central-1.aliyuncs.com/imgs/heart-electrocardiogram-1.svg" height="100" width="100"></td>
 
         <td>Heart Rate</td>
-        <td><?php echo $row['Heart_beat']; ?></td>
+        <td><?php echo $row['Heart_beat']; ?> beats/min
+        </td>
       </tr>
       <tr>
         <td><img src="https://db-measuers.oss-me-central-1.aliyuncs.com/imgs/pressure-meter.svg" height="100" width="100"></td>
 
         <td>Blood Pressure</td>
-        <td><?php echo $row['Pressure']; ?></td>
+        <td><?php echo $row['Pressure']; ?> mm Hg
+        </td>
       </tr>
       
     </table><br>
+    <a href="form.php">User</a>
   </div>
+  <script>var map, infoWindow;
+  var lat1 = '<?= $latdata ?>';
+  var lng1 = '<?= $lngdata ?>';
+  var lat = parseFloat(lat1);
+  var lng = parseFloat(lng1);
+   var pos = {lat,lng};
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 23.708824, lng: 90.364691},
+        zoom: 10
+      });
+      infoWindow = new google.maps.InfoWindow;
+              infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+            map.setZoom(15);
+    }
+      </script>
   <hr>
   
   <hr>
