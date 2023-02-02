@@ -13,7 +13,7 @@
   <h3 align="center">Hackthon</h3>
 
   <p align="center">
-    This project is a participation in Alibaba Cloud Saudi Hackathon.
+    This project is a participation in Alibaba Cloud Saudi Hackathon. A solution in the Health Theme.
   </p>
 </div>
 
@@ -36,7 +36,9 @@
   </a>
 </div>
 <br />
-In this project, we used the available resources in Alibaba Cloud Saudi to build a solution in the Health Sector that mointers the ambulances and keep track of patients' conditions.
+In this project, we used the available resources in Alibaba Cloud Saudi to build a complete cloud-based solution for ambulances operation that provides out-of-hospital medical care for different serious emergencies. The solution increases the efficiency of the operation process by providing a solution not previously implemented due to many gaps. By closing all the gaps and tracking all the major attributes, successful operation is highly increased. Moreover, utilizing cloud technology, speed, efficiency, analytics, and accuracy, were achieved with scalability and sustainability in this life critical operation.
+The services that are provided by Alibaba Cloud were used and exploited in the best way to provide a high-quality system that works in advanced web languages with the integration of artificial intelligence technologies. The system is easy and clear to use, It can be installed on the operations center computers and can be easily linked to the current ambulance systems. This operation will save a lot of hardship and time in each region. In addition it will ensure obtaining the best ambulance trips managed in a smooth and correct manner. Finally, it will reduce the possible human errors, which will save people's lives.
+
 <br/>
 
  `Alibaba Cloud`, `Saudi Arabia`,`Ambulance Mointering System`, `Advanced System`, `Website`, `Health`, `Health-Sector`
