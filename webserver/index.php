@@ -13,7 +13,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$query = "select * from patients";
+$query = "select * from patients WHERE id_patients = '0003'";
 $result = mysqli_query($conn,$query);
 $query1 = "select * from ambulances WHERE id_ambulance = '003'";
 $result1 = mysqli_query($conn,$query1);
@@ -50,7 +50,7 @@ div.end{
   margin: 0 auto;
 }
 #divStage{
-background-color: darkseagreen;
+background-color: grey;
 }
 
 #divHealth{
@@ -70,7 +70,7 @@ background-color:green;
 <!-- Top container -->
 <div class="container">
   <div>
-  <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/ADVANCULANCE.svg" height="200px" width="600px" style="margin-left:300px;">
+  <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/logo2.png" height="100px" width="250px" style="margin-left:120px;">
 
   </div>
 </div>
@@ -94,6 +94,7 @@ background-color:green;
       <div id="divStage" class="w3-container w3-padding-16">
         <div class="w3-left"><i class="material-icons w3-xxxlarge">zoom_out_map</i></div>
         <div class="w3-right">
+          <h3>50</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Stage</h4>
@@ -103,7 +104,7 @@ background-color:green;
       <div id="divHealth" class="w3-container w3-padding-16">
         <div class="w3-left"><i class="material-icons w3-xxxlarge">person_outline</i></div>
         <div class="w3-right">
-          
+         <h3>60</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Health Status</h4>
@@ -113,6 +114,7 @@ background-color:green;
       <div id="divTraffic" class="w3-container w3-padding-16">
         <div class="w3-left"><i class="material-icons w3-xxxlarge">my_location</i></div>
         <div class="w3-right">
+          <h3>70</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Traffic</h4>
@@ -122,7 +124,7 @@ background-color:green;
       <div id="divEqu" class="w3-container w3-padding-16">
         <div class="w3-left"><i class="material-icons w3-xxxlarge">battery_full</i></div>
         <div class="w3-right">
-          
+          <h3>30</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Equipment Condition</h4>

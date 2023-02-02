@@ -67,11 +67,11 @@ function w3_close() {
 var i=0;
       function divchnage(){
         var divtag=document.getElementById("divStage");
-        var bgcolor=["green","orange","darkseagreen"];
+        var bgcolor=["blue","grey","aqua"];
         divtag.style.backgroundColor=bgcolor[i];
         i=(i+1)%bgcolor.length;
       }
-      setInterval(divchnage,7000);
+      setInterval(divchnage,12000);
 
       
       var j=0;
@@ -82,7 +82,7 @@ var i=0;
         j=(j+1)%bgcolor.length;
       }
 
-      setInterval(divHealth,5000);
+      setInterval(divHealth,15000);
 
 
       var m=0;
@@ -93,7 +93,7 @@ var i=0;
         m=(m+1)%bgcolor.length;
       }
 
-      setInterval(divTraffic,3000);
+      setInterval(divTraffic,20000);
 var l=0;
       function divEqu(){
         var divtag=document.getElementById("divEqu");
@@ -102,4 +102,4 @@ var l=0;
         l=(l+1)%bgcolor.length;
       }
 
-      setInterval(divEqu,6000);
+      setInterval(divEqu,25000);

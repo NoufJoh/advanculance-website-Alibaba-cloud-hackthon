@@ -34,7 +34,7 @@ div.end{
 <!-- Top container -->
  <div class="container">
   <div>
-  <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/ADVANCULANCE.svg" height="100px" width="400px" style="margin-left: 400px;">
+  <img src="https://db-measuers.oss-me-central-1.aliyuncs.com/logo/logo2.png" height="100px" width="250px" style="margin-left:120px;">
 
   </div>
 </div>
@@ -50,7 +50,7 @@ div.end{
 
   <!-- Header -->
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-dashboard"></i> Vital measuares</b></h5>
+    <h5><b><i class="fa fa-dashboard"></i> Vital Measuares</b></h5>
   </header>
   <hr>
   

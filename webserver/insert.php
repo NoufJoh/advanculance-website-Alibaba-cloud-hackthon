@@ -33,7 +33,8 @@
 		
 		// Performing insert query execution
 		// here our table name is college
-		$sql = "INSERT INTO patients (Pressure,Oxygen_saturation,Temperature,Heart_beat,Respiration) VALUES ('$Pressure','$Oxygen_saturation','$Temperature','$Heart_beat','$Respiration')";
+		//$sql = "INSERT INTO patients (Pressure,Oxygen_saturation,Temperature,Heart_beat,Respiration) VALUES ('$Pressure','$Oxygen_saturation','$Temperature','$Heart_beat','$Respiration')";
+		$sql = "UPDATE patients SET Pressure = $Pressure, Oxygen_saturation = $Oxygen_saturation, Temperature = $Temperature, Heart_beat= $Heart_beat,Respiration= $Respiration WHERE id_patients = '0003'";
 		$sql2="UPDATE ambulances SET Ambulance_latitude = $latitude, Ambulance_longitude = $longitude WHERE id_ambulance = '003'";
 		if(mysqli_query($conn, $sql)){
 			echo "<h3> {Vital data stored in a database successfully."
@@ -58,6 +59,11 @@
 		mysqli_close($conn);
 		?>
 	</center>
+	<form action="index.php">
+		 <Center>
+      <input type="submit" value="Main Page">
+    </Center>
+  </form>
 </body>
 
 </html>
